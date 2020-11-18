@@ -11,15 +11,14 @@ creditos: @alexmod80
 ### 
 creditos: casitadelterror
 ### 
-cr3ditos: kalix1
+creditos: kalix1
 ## 
 creditos: powermx
 # 
-cr3ditos: dankelthaher
+creditos: dankelthaher
 # 
-creditos: 
+creditos: crazy-vpn
 # 
-creditos : internos de cada script
 ### SISTEMA (recomendados)
 ![](https://img.shields.io/badge/Ubuntu-16.04-orange)
 ![](https://img.shields.io/badge/Ubuntu-18.04-orange)
@@ -32,3 +31,7 @@ creditos : internos de cada script
 #### Instalacion
 wget https://raw.githubusercontent.com/casitadelterror/nex/master/install/multiscript.sh && chmod +x *.sh && ./multiscript.sh
 ### Sigue nuestro canal
+@conectedmx_vip
+# 
+@conectedmx
+# 
