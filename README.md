@@ -1,5 +1,5 @@
  # MULTISCRIPT 2020
-![](https://github.com/casitadelterror/rex/raw/master/install/multi.png)
+![](https://github.com/casitadelterror/nex/raw/master/install/multi.png)
 
 # 
 # SCRIPTS 2020
