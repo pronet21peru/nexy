@@ -111,6 +111,12 @@ kaliofc(){
 #!/bin/bash
 fun_ip
 clear
+msg -bar
+msg -verm " ESPERE UN MOMENTO"
+msg -bar
+dpkg --configure -a &>/dev/null
+apt-get install software-properties-common -y &>/dev/null
+apt-add-repository universe -y &>/dev/null
 SCPdir="/etc/newadm" #&& [[ ! -d ${SCPdir} ]] && mkdir ${SCPdir}
 SCPinstal="$HOME/install" && [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
 SCPidioma="${SCPdir}/idioma"
@@ -161,6 +167,7 @@ sleep 3.s
 echo -e " MENSAJE CAMBIADO CON ÉXITO"
 msg -bar
 echo -e " SU NUEVO RESELLER ES:\e[33m $(cat ${SCPdir}/message.txt)"
+msg bar
 read -p "enter para finalizar"
 msg -bar
 sleep 4.s
@@ -170,6 +177,8 @@ wget -O /bin/resetsshdrop https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/ma
 chmod +x /bin/resetsshdrop
 wget -O /etc/versin_script_new https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/Vercion &>/dev/null
 msg -bar2
+wget -O ${SCPfrm}/ADMbot.sh https://github.com/VPS-MX/VPS-MX-8.0/raw/master/Parches-TEM/ADMbot.sh &>/dev/null
+chmod +x ${SCPfrm}/ADMbot.sh
 echo '#!/bin/sh -e' > /etc/rc.local
 sudo chmod +x /etc/rc.local
 echo "sudo rebootnb" >> /etc/rc.local
@@ -287,6 +296,7 @@ for _archi in ${_repomx[@]}; do
 done
 sleep 1s
 msg -bar
+Key="ScriptFree-Casita-Kalix1-Oficial/12345*456*"
    cat /etc/bash.bashrc|grep -v '[[ $UID != 0 ]] && TMOUT=15 && export TMOUT' > /etc/bash.bashrc.2
    echo -e '[[ $UID != 0 ]] && TMOUT=15 && export TMOUT' >> /etc/bash.bashrc.2
    mv -f /etc/bash.bashrc.2 /etc/bash.bashrc
