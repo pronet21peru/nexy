@@ -29,7 +29,13 @@ creditos: crazy-vpn
 ![](https://img.shields.io/badge/Debian-10-red)
 
 #### Instalacion
-wget https://raw.githubusercontent.com/casitadelterror/nex/master/install/multiscript.sh && chmod +x *.sh && ./multiscript.sh
+`
+wget -O /bin/mix https://raw.githubusercontent.com/casitadelterror/nex/master/install/multiscript.sh &>/dev/null && chmod +x /bin/mix
+`
+# comando para ejecutarlo
+`
+( mix )
+`
 ### Sigue nuestro canal
 @conectedmx_vip
 # 
