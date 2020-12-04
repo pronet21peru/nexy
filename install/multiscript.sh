@@ -50,14 +50,7 @@ echo "
 ╰━━━╯╰━━━╯╰╯╰━╯╰━━╯╰╯╱╱╱╱╱╰╯╱╱
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱
-╭━━━╮╭━━━╮╭━━━╮╭━━━╮
-┃╭━╮┃┃╭━╮┃┃╭━╮┃┃╭━╮┃
-╰╯╭╯┃┃┃┃┃┃╰╯╭╯┃┃┃┃┃┃
-╭━╯╭╯┃┃┃┃┃╭━╯╭╯┃┃┃┃┃
-┃┃╰━╮┃╰━╯┃┃┃╰━╮┃╰━╯┃
-╰━━━╯╰━━━╯╰━━━╯╰━━━╯
-╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱
-╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱
+
               "
               }
 IP=$(wget -qO- ipv4.icanhazip.com)
@@ -90,6 +83,7 @@ wget https://raw.githubusercontent.com/casitadelterror/dankeladm/master/instalad
 rm -rf multiscript.sh instala.sh
 rm -rf .bash_history
 }
+
 sshplus(){
 echo -e "\e[1;33m SCRIPT SSHPLUS\n             SELECIONADO"
 rm -rf .bash_history
@@ -349,11 +343,13 @@ case $casitax in
 #4)golden ;;
 5)sshplus;;
 6)reaper ;;
+7)update;;
 *)echo -e "\e[1;37m POR FAVOR SELECIONE EL NÚMERO CORRECTO"
 rm -rf multiscript.sh
 rm -rf .bash_history
-exit ;;
-7)update;;
+read -p " ENTER PARA VOLVER "
+mix
+;;
 #
 esac
 rm -rf multiscript.sh
