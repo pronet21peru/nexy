@@ -234,7 +234,7 @@ chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/ArchivosUtilitarios/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @? ❌\033[1;33m ]"
+msg -ama "     [ VPS - PRONETYT - SCRIPT \033[1;97m \033[1;33m ]"
 msg -ama "  \033[1;96m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰 "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
@@ -310,7 +310,7 @@ msg -bar
 echo -e "\e[1;37m	MENÚ DE OPCIONES"
 echo -e "\e[33m     MAQUINA            SISTEMA"
 echo -e "\e[33m  IP : \e[31m$IP\e[0m   \e[33m OS : \e[31m$(systema)"
-echo -e "\e[1;31m \e[1;100m@conectedmx_vip   =    @conectedmx\e[0m"
+echo -e "\e[1;31m \e[1;100m@PronetYt   =    @Pronet22\e[0m"
 msg -bar
 #
 echo -e "\e[1;37m	INSTALACION SIN KEY"
